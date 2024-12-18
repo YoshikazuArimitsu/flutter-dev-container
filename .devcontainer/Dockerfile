@@ -66,4 +66,7 @@ EOF
 
 ENV PATH /home/${USERNAME}/fvm/default/bin:$PATH
 
+# WSL用 ホスト側adb-serverに接続する
+ENV ADB_SERVER_SOCKET tcp:172.30.48.1:5037
+
 CMD ["/bin/bash"]

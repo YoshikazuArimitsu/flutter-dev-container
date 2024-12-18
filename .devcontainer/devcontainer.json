@@ -2,7 +2,10 @@
 // https://github.com/lucashilles/flutter-dev-container
 {
 	"name": "Flutter",
-	"dockerFile": "Dockerfile",
+    "build": {
+        "dockerfile": "./Dockerfile"
+    },
+
 	// Set *default* container specific settings.json values on container create.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -17,6 +20,7 @@
 			]
 		}
 	},
+
 	//"forwardPorts": [],
 	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "ubuntu"
